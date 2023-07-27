@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import "./style.css";
 import { searchMovies } from "../../../utilities/utilities";
 
-const Navigationbar = () => {
+const navigationbar = () => {
   const [searchValue, setSearchValue] = useState("");
   const [searchResults, setSearchResults] = useState([]);
 
@@ -18,7 +18,7 @@ const Navigationbar = () => {
   };
 
   return (
-    <div className="Navbar">
+    <div className="navbar">
       <nav className="nav">
         <div>
           <h1 className="logo">
@@ -63,5 +63,5 @@ const Navigationbar = () => {
   );
 };
 
-export default Navigationbar;
+export default navigationbar;
 
