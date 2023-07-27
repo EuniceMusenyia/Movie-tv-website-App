@@ -24,14 +24,13 @@ const MovieLists = () => {
     return <h1>Loading movies...</h1>;
   }
 
-  // Setting the limit of movies to display
-  const limit = 4;
+  const limit = 8;
   const limitedMovies = movies.slice(0, limit);
 
   const sliderSettings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 100,
     slidesToShow: 4,
     slidesToScroll: 1,
     
@@ -39,7 +38,7 @@ const MovieLists = () => {
 
   return (
     <div className="movies-slider">
-      <Carousel {...sliderSettings}>
+      <Carousel  autoPlay={true} {...sliderSettings}>
         {limitedMovies.map((item) => (
           <div key={item.id} className="movie-slide">
             <ImageContainer props={item} useBackgroundImage={true} />

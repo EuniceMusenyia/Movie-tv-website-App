@@ -15,7 +15,8 @@
     background-size: cover;
     background-position: center;
     border-radius: 8px;
-    color: orange; 
+    color: black; 
+    font-size: x-large;
     padding: 20px; 
     display: flex;
     flex-direction: column;

@@ -31,7 +31,7 @@ const Navigationbar = () => {
             value={searchValue}
             onChange={handleInput}
             type="text"
-            placeholder="Search here"
+            placeholder=""
           />
           <button onClick={handleSearch}>Search</button>
         </div>
